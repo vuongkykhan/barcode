@@ -1,0 +1,16 @@
+<%= form_for @product do |f| %>
+
+  <div class="form-group">
+    <%= f.label :name %>
+    <%= f.text_field :name, class: "form-control" %>
+
+    <%= f.label :upc%>
+    <%= f.text_field :upc, class: "form-control"  %>
+
+    <%= f.label :image_url %>
+    <%= f.text_field :image_url, class: "form-control"  %>
+  </div>
+
+  
+  <%= f.submit "Submit", class: "btn btn-primary"  %>
+<% end %>
